@@ -26,5 +26,5 @@ questions:
 - type: ranking
   label: Rank the following cities by population
   optionsFromVariable: german-city-options
-- type: yesno
+- type: yes-no
   label: Is Berlin the capital of Germany?
