@@ -1,4 +1,4 @@
-order: fixed # fixed or random
+order: fixed # fixed | random
 questions:
 - type: single-choice
   label: What is the capital of Germany?

@@ -1,0 +1,3 @@
+security:
+  anonymous: true
+  duplicateProtection: none # none | cookie | ip
