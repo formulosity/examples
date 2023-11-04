@@ -1,6 +1,7 @@
 order: fixed # fixed | random
 questions:
 - type: single-choice
+  id: question1 # optional ID, must be unique across all questions
   label: What is the capital of Germany?
   # defined in variables.yaml
   optionsFromVariable: german-city-options
