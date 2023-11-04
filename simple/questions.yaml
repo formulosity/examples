@@ -6,6 +6,7 @@ questions:
   optionsFromVariable: german-city-options
 - type: multiple-choice
   label: Which of the following are cities in Germany?
+  description: You can select multiple options
   options:
   - Berlin
   - Munich
