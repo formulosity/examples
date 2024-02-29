@@ -3,3 +3,6 @@ theme: default
 intro: |
   This is the introduction to the survey.
   It can be multiple lines long.
+outro: |
+  Thank you for taking the survey.
+  Your feedback is important to us.
