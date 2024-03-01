@@ -1,4 +1,3 @@
-order: random # fixed | random
 questions:
 - type: single-choice
   id: question1 # optional ID, must be unique across all questions
