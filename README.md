@@ -1,3 +1,1 @@
-# examples
-
-2
+# Sample surveys for Formulosity.com
