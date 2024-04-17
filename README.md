@@ -1,1 +1,3 @@
-# Sample surveys for Formulosity.com
+# Sample surveys
+
+Visit [formulosity.com](https://formulosity.com) to learn more.
