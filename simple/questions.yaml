@@ -17,6 +17,7 @@ questions:
   - London
   - Hamburg
   - Cologne
+  - Geneva
   - Oslo
 - type: short-text
   label: What is the capital of Germany?
