@@ -1,1 +1,1 @@
-duplicateProtection: none # none | cookie | ip
+duplicateProtection: cookie # cookie | ip
