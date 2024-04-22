@@ -6,122 +6,53 @@
 }
 
 .background {
-  position: absolute;
-  inset: 0px;
-  z-index: -50;
 }
 
 .background-screen {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .background-fill {
-  height: 562px;
-  max-height: 100%;
-  width: 562px;
-  max-width: 100%;
-  border-radius: 9999px;
-  background-color: #000000;
+  display: none;
+}
+
+.spinner {
+  fill: blue;
 }
 
 .footer {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .footer .navi {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  display: flex;
-  width: 100%;
-  max-width: 128px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 0.5rem;
-
   background-color: #cccccc;
   color: #000000;
 }
 
 .footer .navi .prev {
-  display: inline-flex;
-  height: 2rem;
-  width: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  border-start-start-radius: 0.5rem;
-  border-end-start-radius: 0.5rem;
-
   background-color: #cccccc;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
   color: #000000;
 }
 
 .footer .navi .curr {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  flex-shrink: 0;
+  color: #000000;
 }
 
 .footer .navi .next {
-  display: inline-flex;
-  height: 2rem;
-  width: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  border-start-start-radius: 0.5rem;
-  border-end-start-radius: 0.5rem;
-
   background-color: #cccccc;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
   color: #000000;
 }
 
 .intro {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 768px;
-  gap: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
 }
 
 .intro-title {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .intro-start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .intro-start > button {
   background-color: #cccccc;
   color: #000000;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
 }
 
 .intro-start > button:enabled:hover {
@@ -129,22 +60,11 @@
 }
 
 .form {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 36rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .next-question {
-  height: 3rem;
-  width: 8rem;
   background-color: #cccccc;
   color: #000000;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
 }
 
 .next-question:enabled,
@@ -165,67 +85,69 @@
   background-color: #eeeeee;
 }
 
-.checkbox {
-  color: white;
+.dropdown > div {
+  background-color: #cccccc;
+  color: #000000;
 }
 
-.rating-selected {
+.dropdown button,
+.dropdown button:enabled {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.dropdown button:hover,
+.dropdown button:enabled:hover {
+  background-color: #eeeeee;
+}
+
+.checkbox:checked {
+  color: blue;
+}
+
+.datepicker {
+}
+
+.datepicker-selected {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.datepicker-selected:hover {
+  background-color: #cccccc;
+}
+
+.rating:enabled {
+  background-color: #eeeeee;
+  color: #000000;
+  border-color: #000000;
+}
+
+.rating:enabled:hover:enabled {
+  background-color: #cccccc;
+}
+
+.rating-selected:enabled:enabled {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.rating-selected:enabled:hover:enabled {
+  color: #000000;
   background-color: #eeeeee;
 }
 
 .sortable-item {
   background-color: #cccccc;
   color: #000000;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 0.5rem;
-  height: 3rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
 }
 
-.dropdown button {
-  background-color: #cccccc;
-  color: #000000;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 0.5rem;
-  height: 3rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
+.sortable-item:hover {
+  background-color: #eeeeee;
 }
-
-.dropdown button > span > svg {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  height: 100%;
-}
-
-.outro {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 768px;
-  gap: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
+.outro .h2 {
+  color: #cccccc;
 }
 
 .caption {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
 }
